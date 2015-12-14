@@ -1,0 +1,1163 @@
+/*	FEATURE
+------------------------------------*/
+.featureSlideshow, .featureSlide{
+	height: 730px;
+}
+
+.featureSlideshow{
+	position: relative;
+}
+
+.featureSlide{
+	background-size: cover;
+	background-position: 50% top;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	z-index: 5;
+}
+
+.featureSlide.active{z-index: 10;}
+
+.featureSlide.next{z-index: 15;}
+
+.slideContainer{
+	margin: 0 auto;
+	position: relative;
+}
+
+.featureBox{
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	width: 100%;
+	background-color: rgba(114,49,48,.9);
+}
+
+.lt-ie9 .featureBox{background-color: #723130;}
+
+.featureBox .row{
+	padding: 0 1.25em;
+}
+
+.featureBox p{
+	font-size: 18px;
+	line-height: 30px;
+	padding-bottom: 1em;
+	padding-right: 8.25em;
+}
+
+.featureBox .title{
+	font-size: 44px;
+	line-height: 60px;
+	padding: 12px 0 10px;
+	font-family: 'Roboto Condensed';
+}
+
+.featureNav{
+	margin: 0 auto;
+	position: relative;
+}
+
+.navContainer{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #723130;
+	z-index: 20;
+	padding-left: 15px;
+}
+
+.featureNav a{
+	display: block;
+	width: 10px;
+	height: 20px;
+	background: url('../images/feature-nav.gif') no-repeat -20px 0;
+	text-indent: -9999px;
+	margin: 10px 5px 0;
+	float: left;
+}
+
+.featureNav li.active a{
+	background-position: -30px 0;
+}
+
+.featureNav a.prev, .featureNav a.next{
+	margin: 10px 15px;
+}
+
+.featureNav a.prev{
+	background-position: 0 0;
+}
+
+.featureNav a.next{
+	background-position: -10px 0;
+}
+
+.featureNav ul{
+	list-style: none;
+}
+
+.featureNav li{
+	float: left;
+}
+
+
+/*	NEWS & EVENTS
+------------------------------------*/
+.news{
+	background-color: #d7d7d7;
+	line-height: 1.25;
+	font-weight: 400;
+	color: #464646;
+	padding-bottom: 40px;
+	min-height: 286px;
+}
+
+.news h1{
+	padding-left: .33em;
+	padding-right: .33em;
+}
+
+.newsNav{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 14px 0;
+}
+
+.newsNav ul{
+	float: left;
+	position: relative;
+	left: 50%;
+	text-align: center;
+}
+
+.newsNav li{
+	display: block;
+	float: left;
+	position: relative;
+	right: 50%;
+}
+
+.newsNav a{
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	color: #000;
+	padding: 0 18px;
+	border-radius: 3px;
+}
+
+.newsNav li.active a{
+	color: #fff;
+	background-color: #383838;
+}
+
+.news .more{
+	position: absolute;
+	top: -65px; 
+	left: 32%;
+	display: inline-block;
+	
+    margin:0 auto;
+    text-align:center;
+    width:100%;
+}
+
+span.events {
+    background-image:url('../images/calendar-icon.png');
+    content:' ';
+    background-repeat:no-repeat;
+    background-size:22px;
+    background-position:0px;  
+    padding-left:37px;
+} 
+
+.news .more a{
+	font-size: 16px;
+	color: white;
+	background:#383838;
+	display: inline-block;
+    
+	height: 36px;
+    line-height: 32px;
+    
+	padding: 2px 22px;
+    border-radius: 3px;
+    margin-right:10px;
+}
+
+.eventsList, .newsList{
+	position: relative;
+}
+
+.eventsList.active, .newsList.active{
+	display: block;
+}
+
+/* news */
+.newsList{
+	position: relative;
+}
+
+.newsList a{
+	color: #464646;
+}
+
+.newsList img{
+	margin-bottom: 8px;
+	height: 162px;
+}
+
+/*New events section
+------------------------------------*/
+
+.pane-news-events.news .pane-title {
+    font-size:26px;
+    border-bottom: 1px solid #B9B7B7;
+    width: 96.5%;
+    padding-bottom: 10px;
+}
+
+.pane-news-events.news [class*="column"]+[class*="column"]:last-child {
+    float:left;
+}
+
+.pane-news-events .large-3.columns {
+	padding-left:0 !important;
+}
+
+.pane-news-events .view-content p {
+	margin-top: 5px;
+}
+
+
+.pane-news-events.news .view-footer .large-3.columns{
+    background:url('https://inside.trinity.edu/sites/all/themes/trinity_micro/_/images/pageBGdark.jpg');
+    padding-bottom: 1.5em;
+    text-align:center;
+}
+
+.pane-news-events .news .more{
+   left:0px !important;
+
+}
+
+.pane-news-events .view-footer .events-wrap {
+    top: -72px;
+    position:relative;
+}
+
+.pane-news-events .view-footer h2 {
+	top:-100px;
+	position:relative;
+}
+
+.pane-news-events .view-footer img {
+	padding-left:20px;
+}
+
+.pane-news-events .view-footer h2 {
+    background:none !important;
+    border-bottom: 1px solid #C1C0C0;
+}
+
+.events-wrap.large-3.columns .btn {
+    font-size:16px;
+    line-height:1.25;
+    padding:7px 20px;
+}
+
+
+
+/*	STAY INFORMED
+------------------------------------*/
+.stayInformed{
+	background-color: #fff;
+	color: #b3b2b2;
+	text-align: center;
+	padding: 8px 0 58px;
+}
+
+.stayInformed h1, .stayInformed h2{
+	color: #723130;
+}
+
+.stayInformed h1{
+	font-size: 20px;
+	padding-bottom: 0;
+}
+
+.stayInformed h2{
+	font-size: 50px;
+	font-weight: 300;
+	margin: -5px 0 50px;
+}
+
+.stayInformed .ajax-progress-throbber{
+	display: none;
+}
+
+.stayInformed .form-submit.progress-disabled{
+	background-color: #ccc;
+}
+
+form div{
+	float: left;
+}
+
+form input[type='text'], form input[type='email'], form input[type='password']{
+	width: 233px;
+}
+
+.tooltip{
+	width: 320px;
+	height: 87px;
+	position: absolute;
+	top: -20px; left: -32px;
+	background-color: #383838;
+	text-align: center;
+	color: #fff;
+	box-shadow: 0 2px 4px #333;
+	z-index: 10;
+}
+
+.tooltip div{
+	width: 16px;
+	height: 16px;
+	background-color: #383838;
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	margin-left: -8px;
+	box-shadow: 1px 1px 4px #333;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.lt-ie9 .tooltip div{display: none;}
+
+.stayInformed .tooltip p{
+	font-size: 16px;
+	padding: 15px 35px 0;
+}
+
+.stayInformed p{
+	font-size: 18px;
+	line-height: 1.666em;
+}
+
+.stayInformed a{
+	color: #656565;
+	text-decoration: underline;
+}
+
+
+/*	INTERSTITIALS
+------------------------------------*/
+
+/*Video Code*/
+
+a.video.btn {
+    background-color:#383838;
+    color:white;
+    background-image:url('http://stage.krtu.org/sites/krtu.org/themes/trinity_conferences/_/images/play-icon.png');
+    background-size:50px;
+    background-repeat:no-repeat;
+    padding-left:58px;
+    background-position:5px 0px;
+    height:48px;
+    border: 1px solid rgba(255, 255, 255, 0.67);
+}
+
+a.video.btn:hover {
+	background-color:rgba(255, 255, 255, 0.87);
+	color:black;
+	border:1px solid #383838;
+}
+
+a.video.btn:after {
+    display:none;
+}
+
+
+.field.field-name-field-video-url {
+    position:absolute;
+    right:30%;
+    bottom:100px;
+    z-index:10;
+}
+/*-------*/
+
+
+
+.interstitial{
+	height: 324px;
+	background: url('../images/bg.gif') repeat center;
+	color: #723130;
+}
+
+.interstitial .emblem{
+	padding-top: 10px;
+}
+
+.interstitial .quote{
+	font-size: 23px;
+	line-height: 32px;
+	font-style: italic;
+	padding-top: 30px;
+}
+
+.interstitial .quote .field-name-body p:before{
+	content: '“';
+}
+
+.interstitial .quote .field-name-body p:after{
+	content: '”';
+}
+
+.interstitial .studentName, .interstitial .studentInfo{
+	font-size: 18px;
+	line-height: 24px;
+	font-style: normal;
+}
+
+.interstitial .studentName{
+	font-weight: 500;
+	padding-top: 15px;
+}
+
+.interstitial .photo{
+	margin-top: -58px;
+	text-align: right;
+}
+
+.interstitial .photo img{
+	border-radius: 50%;
+}
+
+/* duplicated in _global.scss */
+
+.interstitialLeft .emblem{
+	/* push 10 */
+	position: relative;
+	left: 83.33333%;
+	right: auto;
+}
+
+.interstitialLeft .quote{
+	/* push 3 */
+	position: relative;
+	left: 25%;
+	right: auto;
+}
+
+.interstitialLeft .photo{
+	/* pull 7 */
+	position: relative;
+	right: 58.33333%;
+	left: auto;
+	text-align: left;
+}
+
+
+/*	MAIN SECTIONS
+------------------------------------*/
+h1{
+	font-size: 50px;
+	font-weight: 300;
+	padding-bottom: 32px;
+}
+
+.mainSection{
+	padding-bottom: 100px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.touch .mainSection{
+	background-attachment: scroll;
+}
+
+.sectionContent{
+	padding-top: 18px;
+	padding-bottom: 60px;
+}
+
+.sectionContent p{
+	font-size: 22px;
+	line-height: 1.72em;
+	padding-bottom: 20px;
+}
+
+.sectionContent strong{
+	font-weight: 500;
+}
+
+.box{
+	width: 100%;
+	background-color: #fff;
+	border-radius: 2px;
+	padding: 15px;
+	color: #959595;
+	line-height: 1.625;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.box h3{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.box img{
+	margin-bottom: 10px;
+}
+
+.learnMore{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.front .tabNav a, 
+.front .tabbed_content .tabNav li.active a,
+.front .tabbed_content .tabNav li:hover a{
+	color: #fff;
+	font-weight: 300;
+}
+
+.tabContent img{
+	max-height: 93px;
+}
+
+.campusLife .tabNav li span, .campusLife .tabNav li:hover span{
+	display: none;
+}
+
+.front .tabContentContainer {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 60px 0 65px;
+}
+
+.btn {
+	background-color: #fff;
+	color: #723130;
+	font-size: 18px;
+	line-height: 48px;
+	border-radius: 3px;
+	padding: 0 28px;
+	display: inline-block;
+	transition: background-color .25s ease-out;
+}
+
+.btn:hover {
+	background-color: #e4e4e4;
+}
+
+.btn:after{
+    content: ' →'
+  }
+
+/* About Trinity */
+.aboutTrinity{
+	background-color: #708931;
+	background-image: url('../images/about-bg.jpg');
+}
+
+.aboutTrinity .box{color: #708931;}
+
+
+/* Academics */
+.academics{
+	background-color: #723130;
+	background-image: url('../images/academics-bg.jpg');
+}
+
+.academics .wrapper{
+	background-color: rgba(114,49,48,.7);
+	margin-top: 40px;
+}
+
+.academics .tabNav{
+	margin-top: -40px;
+	padding-top: 0;
+}
+
+.academics .tabContent{
+	text-align: left;
+	text-transform: none;
+}
+
+.academics .tabContent ul{
+	list-style: none;
+	font-size: 18px;
+	line-height: 1.67em;
+}
+
+.academics .tabContent li{
+	padding-bottom: 10px;
+}
+
+.academics .tabContent a{
+	text-decoration: underline;
+}
+
+.academics .tabContent p{
+	font-size: 22px;
+	line-height: 1.72em;
+	padding-bottom: 20px;
+}
+
+.academics .tabContent .not-minor a:after{
+	content: '*';
+}
+
+.academics .view-footer{
+	clear: left;
+}
+
+.academics .tabContent .view-footer{
+	padding-left: 1.25em;
+}
+
+.academics .tabContent .view-footer .field-content, .academics .tabContent .view-footer p{
+	float: left;
+}
+
+.academics .tabContent .view-footer p, .academics .tabContent .view-footer span{
+	font-size: 10px;
+	line-height: 1.4em;
+	padding: 0;
+}
+
+.academics .tabContent .view-footer .views-row{
+	clear: left;
+}
+
+.academics .box{color: #723130;}
+
+/* Admissions & Aid */
+.admissionsAid{
+	background-image: url('../images/admissions-bg.jpg');
+}
+
+.admissionsAid .box{
+	color: #488c9f;
+}
+
+.admissionsAid .box h3{
+	color: #3a707f;
+	padding: 0;
+	line-height: 26px;
+}
+
+.admissionsAid .box img{
+	margin: 10px 0 0 0;
+}
+
+/* Back To Top */
+.backToTop{
+	position: fixed;
+	bottom: 120px;
+	right: 10%;
+	display: none;
+}
+
+.backToTop a{
+	display: block;
+	height: 80px;
+	width: 163px;
+	background: url('../images/back-top-bg.png') no-repeat;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 32px;
+}
+
+
+/*	STAY INFORMED
+------------------------------------*/
+.stayInformed{
+	background-color: #fff;
+	color: #b3b2b2;
+	text-align: center;
+	padding: 8px 0 58px;
+}
+
+.stayInformed h1, .stayInformed h2{
+	color: #723130;
+}
+
+.stayInformed h1{
+	font-size: 20px;
+	padding-bottom: 0;
+}
+
+.stayInformed h2{
+	font-size: 50px;
+	line-height: 27px;
+	font-weight: 300;
+	margin: -5px 0 50px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.stayInformed .ajax-progress-throbber{
+	display: none;
+}
+
+.stayInformed .form-submit.progress-disabled{
+	background-color: #ccc;
+}
+
+form{
+	font-weight: 400;
+	margin-bottom: 26px;
+}
+
+form div{
+	float: left;
+	position: relative;
+}
+
+form label, form input{
+	color: #989797;
+}
+
+form label{
+	position: absolute;
+	top: 0; left: 10px;
+	line-height: 40px;
+	cursor: text;
+}
+
+form input[type='text'], form input[type='email'], form input[type='password']{
+	background-color: #e9e8e8;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e9e8e8;
+	margin: 0 10px 10px 0;
+	text-indent: 10px;
+	width: 233px;
+	border-radius: 2px;
+	-webkit-appearance: none;
+}
+
+form input[type='text']:focus, form input[type='email']:focus, form input[type='password']:focus{
+	border-color: #86a0a0;
+}
+
+form input[type='text'].error, form input[type='email'].error, form input[type='password'].error{
+	border-color: red;
+}
+
+form input[type='submit']{
+	background-color: #723130;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 38px;
+	border-radius: 2px;
+}
+
+.tooltip{
+	width: 320px;
+	height: 87px;
+	position: absolute;
+	top: -20px; left: -32px;
+	background-color: #383838;
+	text-align: center;
+	color: #fff;
+	box-shadow: 0 2px 4px #333;
+	z-index: 10;
+}
+
+.tooltip div{
+	width: 16px;
+	height: 16px;
+	background-color: #383838;
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	margin-left: -8px;
+	box-shadow: 1px 1px 4px #333;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.lt-ie9 .tooltip div{display: none;}
+
+.stayInformed .tooltip p{
+	font-size: 16px;
+	padding: 15px 35px 0;
+}
+
+.stayInformed p{
+	font-size: 18px;
+	line-height: 1.666em;
+}
+
+.stayInformed a{
+	color: #656565;
+	text-decoration: underline;
+}
+
+
+
+/*	SMALL SCREEN OVERRIDES
+------------------------------------*/
+@media only screen and (max-width: 1140px){
+	.stayInformed .tooltip{display: none;}
+
+	.stayInformed form{
+		width: 728px;
+		margin: 0 auto;
+	}
+
+	.stayInformed input[type='text'], .stayInformed input[type='email']{
+		width: 145px;
+		margin-right: 5px;
+	}
+
+	.interstitial .quote{
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.featureBox p{
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.featureBox .title{
+		font-size: 42px;
+		line-height: 56px;
+	}
+}
+
+@media only screen and (max-width: 960px){
+	.interstitial .studentName, .interstitial .studentInfo{
+		font-size: 16px;
+		line-height: 21px
+	}
+
+	.date p{
+		font-size: 14px;
+		padding: 0 5px;
+	}
+
+	.date .day{
+		font-size: 100px;
+	}
+
+	.athletics{
+		background-image: url('../images/athletics-bg-mobile.jpg');
+	}
+}
+
+@media only screen and (max-width: 980px) and (min-width: 768px){
+	.flag{display: none;}
+
+	.eventDate .month{
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+
+	.eventDate .day{
+		font-size: 36px;
+	}
+	
+	.interstitial .quote{
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+
+/*	MOBILE OVERRIDES
+------------------------------------*/
+@media only screen and (max-width: 767px){
+	.feature{
+		padding-bottom: 190px;
+	}
+
+	.featureSlideshow, .featureSlide, .slideContainer{
+		height: 350px !important;
+		width: 100%;
+	}
+
+	.featureBox{
+		width: 100%;
+		padding-bottom: 15px;
+		height: 190px;
+		bottom: -190px;
+		background-color: rgb(114,49,48);
+	}
+
+	.featureBox p{
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: .05em;
+		padding-right: 0;
+	}
+
+	.featureBox .title{
+		font-size: 20px;
+		line-height: 20px;
+		letter-spacing: normal;
+	}
+
+	.navContainer{
+		display: none;
+	}
+
+	.news{
+		height: auto;
+	}
+
+	.more {
+		left:0px !important;
+		padding-top:1.5em;
+		background:#ccc;
+	}
+
+	.news h1{
+		text-align: center;
+
+	}
+
+	.pane-news-events.news .pane-title {
+		border-bottom:none !important;
+	}
+
+	.eventsList .more, .newsList .more{
+		position: relative;
+		top: auto;
+		right: auto;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.eventsList .large-3{
+		margin-bottom: 20px;
+	}
+
+	.eventContainer{
+		background-color: transparent;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.eventLeft, .eventRight{
+		width: 100%;
+	}
+
+	.eventLeft img{
+		max-width: 245px;
+	}
+
+	.flag{
+		display: none;
+	}
+
+	.eventDate{
+		position: relative;
+		right: auto;
+		bottom: auto;
+		width: 100%;
+		color: #464646;
+	}
+
+	.eventDate .month, .eventDate .day{
+		display: inline;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: none;
+		font-family: 'Roboto';
+		font-weight: 400;
+	}
+
+	.eventTitle{
+		text-align: center;
+	}
+
+	.eventsList .view-content, .newsList .view-content{
+		position: relative;
+		z-index: 5;
+	}
+
+	.newsList{
+		text-align: center;
+	}
+
+	.newsList .large-3{
+		margin-bottom: 20px;
+	}
+
+	.interstitial .emblem img{
+		max-width: 120px;
+	}
+
+	.stayInformed h1, .stayInformed h2{
+		line-height: 1em;
+	}
+
+	.stayInformed h2{
+		margin-bottom: 20px;
+	}
+
+	.stayInformed form{
+		width: auto;
+	}
+
+	.stayInformed form div{
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.stayInformed input[type='text'],
+	.stayInformed input[type='email']{
+		width: 100%;
+	}
+
+	.tooltip{
+		display: none;
+	}
+
+	.interstitial{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.interstitialLeft .emblem, .interstitialLeft .quote{
+		left: auto;
+	}
+
+	.interstitial .emblem{
+		padding-top: 20px;
+	}
+
+	.interstitial .photo{
+		right: auto;
+		margin: 20px 0;
+		text-align: center;
+	}
+
+	.mainSection{
+		background-position: center top;
+		background-attachment: scroll;
+		padding-bottom: 50px;
+	}
+
+	section h1{
+		font-size: 36px;
+		line-height: 1em;
+		margin-bottom: 20px;
+		padding-bottom: 0;
+	}
+
+	.sectionContent{
+		padding-bottom: 10px;
+	}
+
+	.sectionContent p{
+		font-size: 18px;
+	}
+	
+	.tabbed_content .tabNav{
+		margin-bottom: 0;
+	}
+	
+	.tabNav ul{
+		border-top: 1px solid #fff;
+	}
+
+	.tabbed_content .tabs1 li, 
+	.tabbed_content .tabs2 li, 
+	.tabbed_content .tabs3 li, 
+	.tabbed_content .tabs4 li, 
+	.tabbed_content .tabs5 li{
+		width: 100%;
+		border-right: none;
+	}
+
+	.tabbed_content .tabNav li.active span,
+	.tabbed_content .tabNav li:hover span{
+		display: none;
+	}
+
+	.tabContentContainer{
+		margin: 30px 0;
+		float: left;
+		width: 100%;
+	}
+
+	.no-js .tabContent{
+		padding-bottom: 40px;
+	}
+
+	.tabContent,
+	.no-js .tabContent:last-child{
+		padding: 0;
+	}
+
+	.tabContent h2{
+		text-align: center;
+	}
+
+	.tabContent .columns{
+		margin-bottom: 40px;
+	}
+
+	.tabContent .freeNachos img {
+		margin: 0 0 -39px;
+	}
+
+	.tabContent .tacoTaco img {
+		margin: 0 0 -59px;
+	}
+
+	.learnMore{
+		margin-top: 0;
+	}
+
+	.box{text-align: center;}
+
+	.mainSection .large-4{
+		margin-bottom: 40px;
+	}
+
+	.academics .wrapper{
+		background-color: transparent;
+	}
+
+	.academics .tabContent .columns{
+		margin-bottom: 0;
+	}
+
+	.date{
+		margin-top: 0;
+	}
+
+	.btn{
+		font-size: 15px;
+		line-height: 34px;
+		padding: 0 10px;
+	}
+	.large-centered p{
+		margin-top: 20px;
+	}
+}

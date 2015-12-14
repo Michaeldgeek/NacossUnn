@@ -1,0 +1,11 @@
+#bugmuncher_button{background:#f0f0f0;color:#000;font-size:14px;font-weight:bold;font-family:Arial,Helvetica,sans-serif;padding:6px 10px 4px 10px;text-decoration:none;text-align:center;border:solid 2px #000;-moz-box-shadow:0 0 1px #000;-webkit-box-shadow:0 0 1px #000;box-shadow:0 0 1px #000;}
+#bugmuncher_button.display_as_tab{-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-right-radius:5px;border-top-left-radius:5px;border-bottom:none;}
+#bugmuncher_button.display_as_top{-webkit-border-bottom-left-radius:5px;-webkit-border-bottom-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-top:none;}
+#bugmuncher_button{margin:0;position:fixed;z-index:999999;}
+#bugmuncher_button.display_as_tab{bottom:0;}
+#bugmuncher_button.display_as_tab.display_on_left{left:2%;}
+#bugmuncher_button.display_as_tab.display_on_right{right:2%;}
+#bugmuncher_button.display_as_top{top:0;}
+#bugmuncher_button.display_as_top.display_on_left{left:2%;}
+#bugmuncher_button.display_as_top.display_on_right{right:2%;}
+#bugmuncher_widget_iframe{background:none;z-index:9999999;}
