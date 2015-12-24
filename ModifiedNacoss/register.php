@@ -81,6 +81,7 @@ else:
                <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
             <!--<script src="js/temp.js" type="text/javascript"></script>-->
             <script src="<?= HOSTNAME ?>js/jQuery.js" type="text/javascript"></script>
+            <script src="js/libs/jquery.placeholder.js" type="text/javascript"></script>
             <?php require_once './feedback_tags_js.php'; ?>
             <script src="<?= HOSTNAME ?>js/libs/spin.js" type="text/javascript"></script>
             <script src="js/js_7-QUBm7UNKxGysSRvvU8NUXK0dgit5hMewfryG8U0M8.js" type="text/javascript"></script>
@@ -88,7 +89,6 @@ else:
             <script src="js/js_DtHTCEvWc9hbSc50tVjIg4AVAl5qhZMr4bIT4MXQV-E.js" type="text/javascript"></script>
             <script src="js/js_E3I8bhPisPOfL1hCSapvvPOG5yuCVZmOWMvMUSyUlXk.js" type="text/javascript"></script>
             <script src="js/helper.js" type="text/javascript"></script>
-            <script src="js/libs/jquery.placeholder.js" type="text/javascript"></script>
             <script src="<?= HOSTNAME ?>js/modernizr.js" type="text/javascript"></script>
         </head>
         <body id="body" class="html not-front not-logged-in page-node page-node- page-node-304 node-type-page section-admissions left-sidebar" style="background-attachment: fixed; overflow: hidden">
@@ -127,7 +127,7 @@ else:
                                                     <input name="btn" id="verify" style="background-color: white; color: #843130; border: #D2D2D2; border-style: solid; border-width: 1px;" type="submit" value="Verify" /><br>
                                                 </div>
                                                 <div style="display: none;" class="grad">
-                                                    <input value="" id="n_reg" name="n_reg" style="width: 90%; background-color: white; color: #843130;" type="text" placeholder="Enter Reg No" /><br>
+                                                    <input value="" id="n_reg" name="n_reg"  type="text" placeholder="Enter Reg No" /><br>
                                                     <input value="" name="n_fn" style="width: 90%; background-color: white; color: #843130;" type="text" placeholder="Enter First Name" /><br>
                                                     <input value="" name="n_ln" style="width: 90%; background-color: white; color: #843130;" type="text" placeholder="Enter Last Name" /><br>
                                                     <input value="" name="n_p" style="width: 90%; background-color: white; color: #843130;" type="text" placeholder="Enter Password" /><br>
@@ -162,8 +162,8 @@ else:
 
             <script>
                 $(document).ready(function () {
+                    $('input').placeholder();
                     pageInfo('Register');
-
                     $('#enrollType').change(function () {
                         _step1selection = $('input:checked', $step1).val();
                         $('h3', $step2).removeClass('inactive');
@@ -272,7 +272,7 @@ else:
                             $('.apply-commonapp, .apply-applytx').hide();
                         }
                     });
-                    $('#n_reg').placeholder();
+
                 });
 
             </script>

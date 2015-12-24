@@ -6,7 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <?php require_once './default_head_tags.php'; ?>
-
+        <style>
+            .card {
+                border: 1px solid #EDEDED;
+                height: 164px;
+                width: 245px;
+                margin-bottom: 0.5rem;
+                background: #FFF none repeat scroll 0% 0%;
+                color: #000;
+                border-radius: 4px;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .card-section {
+                padding: 1rem;
+            }
+        </style>
     </head>
     <body style="overflow: hidden"class="html front not-logged-in page-home" id="body" data-stellar-background-ratio="0.5">
 
@@ -126,10 +143,14 @@
                                     <!-- news column ends -->
                                     <!-- news column -->
                                     <div class="views-row views-row-4 views-row-even views-row-last large-3 columns">
-                                        <a href="/news/award-winning-filmmaker-speak-trinity">
-                                            <img typeof="foaf:Image" src="https://new.trinity.edu/sites/default/files/styles/news_thumbnail/public/news/award-winning-filmmaker-speak-trinity-1445022659.jpg?itok=8pRx0vZr" alt="" height="162" width="245">
-                                            <p>Award-Winning Filmmaker to Speak at Trinity</p>
-                                        </a>
+                                        <div class="card">
+                                            <div class="card-section">
+                                                <a href="/news/award-winning-filmmaker-speak-trinity">
+
+                                                    <p>Award-Winning Filmmaker to Speak at Trinity</p>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- news column ends -->
                                 </div>
